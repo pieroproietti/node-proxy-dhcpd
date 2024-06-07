@@ -1,0 +1,39 @@
+{
+    "name": "node-dhcpd-proxy",
+    "main": "dist/",
+    "type": "commonjs",
+    "version": "0.0.5",
+    "description": "node proxy dhcpd for penguins-eggs",
+    "author": "PieroProietti",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pieroproietti/etrick.git"
+    },
+    "keywords": [
+        "dhcp",
+        "proxy"
+    ],
+    "dependencies": {
+        "netmask": "2.0.2",
+        "tslib": "^2.5.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.2",
+        "@typescript-eslint/eslint-plugin": "^5.57.0",
+        "@typescript-eslint/parser": "^5.54.0",
+        "eslint-config-oclif-typescript": "^3",
+        "eslint-config-oclif": "^5",
+        "eslint-config-prettier": "^9",
+        "eslint": "^8",
+        "prettier": "^3.3.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.3"
+    },
+    "scripts": {
+        "lint": "eslint . --ext .ts --config .eslintrc.yml",
+        "lint-and-fix": "eslint . --ext .ts --fix --config .eslintrc.yml",
+        "format": "prettier --write \"+(src|test)/**/*.+(ts|js|json)\"",        
+        "build": "tsc -p ."
+    }
+}

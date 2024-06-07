@@ -1,0 +1,6 @@
+*-debug.log
+*-error.log
+# remove all in 
+dist
+node_modules
+packages-lock.json
