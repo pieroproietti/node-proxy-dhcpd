@@ -12,7 +12,7 @@ importers:
         specifier: 2.0.2
         version: 2.0.2
       tslib:
-        specifier: ^2.5.0
+        specifier: ^2.6.3
         version: 2.6.3
     devDependencies:
       '@types/node':

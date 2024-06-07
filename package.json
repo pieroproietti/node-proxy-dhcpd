@@ -1,5 +1,5 @@
 {
-    "name": "node-dhcpd-proxy",
+    "name": "node-proxy-dhcpd",
     "main": "dist/",
     "type": "commonjs",
     "version": "0.0.5",
@@ -8,7 +8,7 @@
     "license": "GPL-3.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pieroproietti/etrick.git"
+        "url": "https://github.com/pieroproietti/node-proxy-dhcpd.git"
     },
     "keywords": [
         "dhcp",
@@ -16,7 +16,7 @@
     ],
     "dependencies": {
         "netmask": "2.0.2",
-        "tslib": "^2.5.0"
+        "tslib": "^2.6.3"
     },
     "devDependencies": {
         "@types/node": "^20.14.2",
