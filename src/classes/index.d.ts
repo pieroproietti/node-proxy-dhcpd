@@ -1,11 +1,8 @@
-declare module 'dhcpd' {
-    export interface Options {
+import { IDhcpOptions } from "../interfaces/i-pxe";
 
-      // definisci le opzioni qui
-    }
-  
-    export class etrick {
-      constructor(opts: Options);
+declare module 'dhcpd' {
+    export class dhcpd {
+      constructor(opts: IDhcpOptions);
       // definisci i metodi e le proprietà qui
     }
   
