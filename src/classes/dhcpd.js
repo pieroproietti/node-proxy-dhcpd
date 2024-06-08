@@ -249,6 +249,4 @@ function _get_option(pkt, opt) {
   return opt in pkt.options ? pkt.options[opt] : undefined;
 }
 
-export default dhcpd
-
-
+export default dhcpd;

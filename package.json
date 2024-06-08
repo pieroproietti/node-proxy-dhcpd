@@ -1,6 +1,6 @@
 {
     "name": "node-proxy-dhcpd",
-    "main": "dist/",
+    "main": "src/index.ts",
     "type": "module",
     "version": "0.0.5",
     "description": "node proxy dhcpd for penguins-eggs",

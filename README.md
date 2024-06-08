@@ -12,28 +12,39 @@ There is still work to be done, though; it is functional but should undergo refa
 
 You can find an example of use in the [pxe.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/pxe.ts) class of penguins-eggs. 
 
-Note the lines:
-
-```
-// @ts-ignore
-import etrick from 'etrick
-```
-
-And lines:
-```
-    /**
-     *
-     * @param dhcpOptions
-     */
-    dhcpStart(dhcpOptions: IDhcpOptions) {
-      new etrick(dhcpOptions)
-    }
-```
-
-The definition of types can be found in [i-pxe.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/interfaces/i-pxe.ts)
-
 
 Reference:
-* [node-dhcproxy](https://github.com/FOGProject/node-dhcproxy) node-dhcproxy is based on [node-dhcpd](https://github.com/glaszig/node-dhcpd)
+* [node-dhcproxy](https://github.com/FOGProject/node-dhcproxy) 
 
  
+# Working tsconfig.json
+```
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "module": "ES2020", // utilizza i moduli ES6
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "lib": [
+      "ES2020", // utilizza le funzionalità ES6
+      "DOM"
+    ],
+    "target": "ES2020", // compila per ES6
+    "resolveJsonModule": true,
+    "baseUrl": ".", // aggiunto per supportare la risoluzione dei moduli
+    "paths": { // aggiunto per supportare la risoluzione dei moduli
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*",
+  ]
+}
+```

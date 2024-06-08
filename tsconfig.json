@@ -3,16 +3,24 @@
     "allowJs": true,
     "importHelpers": true,
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ES2020", // utilizza i moduli ES6
     "moduleResolution": "node",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "lib": [
-      "es2021"
+      "ES2020", // utilizza le funzionalità ES6
+      "DOM"
     ],
-    "target": "es2021",
-    "resolveJsonModule": true
+    "target": "ES2020", // compila per ES6
+    "resolveJsonModule": true,
+    "baseUrl": ".", // aggiunto per supportare la risoluzione dei moduli
+    "paths": { // aggiunto per supportare la risoluzione dei moduli
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    },
   },
   "include": [
     "src/**/*",
