@@ -2,7 +2,7 @@
     "name": "node-proxy-dhcpd",
     "main": "src/index.ts",
     "type": "module",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "description": "node proxy dhcpd for penguins-eggs",
     "author": "PieroProietti",
     "license": "GPL-3.0",
@@ -33,7 +33,7 @@
     "scripts": {
         "lint": "eslint . --ext .ts --config .eslintrc.yml",
         "lint-and-fix": "eslint . --ext .ts --fix --config .eslintrc.yml",
-        "format": "prettier --write \"+(src|test)/**/*.+(ts|js|json)\"",        
+        "format": "prettier --write \"+(src|test)/**/*.+(ts|js|json)\"",
         "build": "tsc -p ."
     }
 }
