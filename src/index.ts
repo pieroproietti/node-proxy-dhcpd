@@ -1,7 +1,6 @@
 /**
- * index.js: just export
+ * index.ts: just export
  */
-import dhcpd from "./classes/dhcpd.js";
-import { IDhcpOptions as Options } from "./interfaces/i-pxe.js";
-
-export { Options, dhcpd };
+import { IDhcpOptions} from "./interfaces/i-pxe";
+import { dhcpd } from './classes/dhcpd';
+export { dhcpd, IDhcpOptions};

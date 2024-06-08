@@ -15,7 +15,7 @@ export interface IDhcpOptions {
 }
 
 export interface IDhcpd {
-  // constructor(opts)
+  constructor(opts: IDhcpOptions): void;
   pre_init: (pkt: IPacket) => void;
   discover: (pkt: IPacket) => void;
   request: (pkt: IPacket) => void;

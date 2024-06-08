@@ -15,9 +15,9 @@ import {
   writeBytes,
   writeInt16,
   readInt16,
-} from "../utils.js";
+} from "../utils";
 
-import sprintf from "../sprintf.js";
+import sprintf from "../sprintf";
 
 interface IStringIndex {
   [key: string]: any;
